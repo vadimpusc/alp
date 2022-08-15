@@ -46,7 +46,7 @@
       <h3>Diritto Penale</h3>
       <p>L’assistenza legale in il diritto di famiglia, riguarda le problematiche relative al rapporto di coppia, al divorzio alla separazione, alla tutela dei figli minori e alla gestione delle problematiche per parenti con disabilità.</p>
     </div>
-    <div class="w3-col l3 m6 sub-sections">
+    <div class="w3-col l3 m6  sub-sections">
       <h3>Diritto Civile</h3>
       <p>Lo studio legale di Pordenone affianca le famiglie nell'ambito della successione ereditaria per causa di morte, sia nel caso di successione legittima che di successione testamentaria o di impugnativa del testamento.</p>
     </div>
@@ -62,7 +62,6 @@
         <h3>Diritto Internazionale</h3>
         <p>Esperto di diritto internazionale.</p>
       </div>
-  
   </div>
 
 
@@ -102,10 +101,8 @@
     }
 
     .sections {
-        padding-left: 80px;
-        padding-right: 80px;
-        /* min-height: 60vh; */
-        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
 }
 
 h5 {
@@ -116,7 +113,6 @@ h5 {
 .contact {
     text-align: center;
     font-size: 20px;
-    /* min-height: 60vh */
 }
 
 .sub-sections {
@@ -129,5 +125,12 @@ h5 {
           display: none;
         }
       }
+
+ @media only screen and (max-width: 1000px) {
+  .sections {
+    display: flex;
+    flex-direction: wrap;
+  }
+ }   
 
 </style>
