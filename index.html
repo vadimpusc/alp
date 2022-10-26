@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
 <title>L’avvocato Libero Pusceddu</title>
 <meta charset="UTF-8">
@@ -26,7 +26,7 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="img/main.jpg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="img/main.jpg" alt="L’avvocato Libero Pusceddu" width="1500" height="800">
   <!-- <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>PUSCEDDU</b></span> <span class="w3-hide-small w3-text-light-grey">LIBERO</span></h1>
   </div> -->
@@ -41,7 +41,7 @@
 
   <!-- Project Section -->
   <div class="w3-container w3-padding-32" id="projects">
-    <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">Attivita</h4>
+    <h4 class="w3-padding-16">Attivita</h4>
   </div>
 
   <div class="sections">
@@ -71,7 +71,8 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">Chi Sono</h4>
+    <h4 class="w3-padding-16">Chi Sono</h4>
+    <center><img class="about-image" src="img/about.jpg" alt="L’avvocato Libero Pusceddu" width="50%"></center>
     <p class="sections">L'avv. Libero Pusceddu, laureato nell’Università di Cagliari nella corrispondente facoltà di Giurisprudenza, ha svolto l’attività professionale di avvocato in diversi Fori distribuiti nel territorio dello Stato : Ancona, Udine, Roma, Gela, Cagliari, Piacenza, Genova Oristano, Sassari, Nuoro, Lanusei, Milano, Brescia, Mantov, Lodi, Pavia e Palermo. Il proprio studio situato nella città di Cagliari, via Guglielmo Marconi n. 8, si avvale di collaboratori esperti e qualificati.
     </p>
   </div>
@@ -79,7 +80,7 @@
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contatti</h4>
+    <h4 class="w3-padding-16">Contatti</h4>
     <p class="contact">Telefono:<a href="tel:+393281166241">+(39)328 116 6241</a></p>
     <p class="contact">Email:<a href="mailto:pusceddulibero@gmail.com">pusceddulibero@gmail.com</a></p>
   </div>
@@ -98,6 +99,10 @@
 
 <style>
 
+  p {
+    font-size: 18px;
+  }
+
   a {
     text-decoration: none;
   }
@@ -114,8 +119,10 @@
 }
 
 h5 {
-    font-size: 20px;
+    font-size: 18px;
     background-color: whitesmoke;
+    /* position: relative; */
+  
 }
 
 .contact {
@@ -127,6 +134,7 @@ h5 {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 
 @media (max-width: 767px) {
         .hero-text {
@@ -140,5 +148,11 @@ h5 {
     flex-direction: column;
   }
  }   
+
+ @media (max-width: 767px) {
+        .about-image {
+          display: none;
+        }
+      }
 
 </style>
