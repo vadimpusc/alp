@@ -346,3 +346,36 @@ section {
     border-radius: 50%;
     padding: 3vw;
   }
+
+
+  /* Mobile menu  */
+    
+  .mobilex {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    text-align: center; /* Align items to the center */
+    width: 100%; /* Full width */
+    display: none; /* Initially hidden */
+  }
+  
+  .mobilex li {
+    font-size: 22px;
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .mobilex li:last-child {
+    margin-right: 0;
+  }
+  
+  .mobilex li a {
+    color: white;
+    text-decoration: none;
+  }
