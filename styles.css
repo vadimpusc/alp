@@ -379,3 +379,23 @@ section {
     color: white;
     text-decoration: none;
   }
+
+  /* to top  */
+
+  #backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  /* #backToTopBtn:hover {
+    background-color: lightgrey;
+  } */
