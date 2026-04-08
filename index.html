@@ -7,88 +7,169 @@
   <meta name="description" content="Avv. Libero Pusceddu, avvocato a Cagliari. Diritto Penale, Civile, Amministrativo, Tributario e Internazionale. Studio in Cagliari. Tel. +39 328 116 6241." data-i18n-attr="content:meta.description" />
   <meta property="og:title" content="Avv. Libero Pusceddu – Avvocato a Cagliari" data-i18n-attr="content:meta.title" />
   <meta property="og:description" content="Consulenza e assistenza legale in più aree del diritto. Contatti: +39 328 116 6241 – libero.pusceddu@libero.it" data-i18n-attr="content:meta.ogdesc" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#ffffff; --muted:#5b6570; --ink:#0a0f1a; --line:#e5e7eb;
-      --brand:#1e40af; --brand-2:#2563eb; --accent:#0ea5e9; --radius:18px; --shadow:0 8px 30px rgba(2,8,23,.07);
+      --bg:#fafbfc;
+      --bg-solid:#ffffff;
+      --muted:#6b7280;
+      --ink:#1a1a2e;
+      --ink-light:#374151;
+      --line:#e5e7eb;
+      --line-light:#f3f4f6;
+      --brand:#1e3a5f;
+      --brand-light:#2d4a6f;
+      --accent:#c9a962;
+      --accent-light:#e5d4a1;
+      --radius:12px;
+      --radius-lg:20px;
+      --shadow-sm:0 2px 8px rgba(26,26,46,0.06);
+      --shadow-md:0 8px 24px rgba(26,26,46,0.08);
+      --shadow-lg:0 16px 48px rgba(26,26,46,0.12);
+      --transition:0.3s cubic-bezier(0.4,0,0.2,1);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0;font:16px/1.65 system-ui,-apple-system,Segóe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg)}
+    body{margin:0;font-family:'Inter',system-ui,-apple-system,Segóe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.7;color:var(--ink);background:var(--bg)}
     img{max-width:100%;display:block}
-    a{color:var(--brand-2);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    a{color:var(--brand);text-decoration:none;transition:color var(--transition)}
+    a:hover{color:var(--accent)}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px}
+
+    h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.25;margin:0 0 0.5em;color:var(--ink);text-align:center}
+    h1{font-size:clamp(2.2rem,5vw,3.5rem);letter-spacing:-0.02em}
+    h2{font-size:clamp(1.75rem,3vw,2.5rem)}
+    h3{font-size:1.25rem;font-family:'Inter',sans-serif;font-weight:600}
 
     /* Header */
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.1px}
-    .nav .links{display:flex;gap:22px;align-items:center}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--line-light);transition:box-shadow var(--transition)}
+    header.scrolled{box-shadow:var(--shadow-sm)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:2.5rem !important;letter-spacing:0.02em;color:var(--ink)}
+    .brand:hover{text-decoration:none;color:var(--ink)}
+    .brand-accent{color:var(--accent)}
+    .nav .links{display:flex;gap:28px;align-items:center}
+    .nav a{font-size:0.92rem;font-weight:500;color:var(--ink-light);position:relative;padding:4px 0}
+    .nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--accent);transition:width var(--transition)}
+    .nav a:hover::after{width:100%}
+    .nav a:hover{color:var(--ink);text-decoration:none}
     .lang{display:flex;align-items:center;gap:8px}
-    select{appearance:none;border:1px solid var(--line);padding:8px 12px;border-radius:10px;background:#fff;box-shadow:var(--shadow)}
+    .lang label{font-size:0.8rem;color:var(--muted)}
+    select{appearance:none;border:1px solid var(--line);padding:10px 36px 10px 14px;border-radius:8px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center;cursor:pointer;font-size:0.9rem;color:var(--ink);transition:border-color var(--transition),box-shadow var(--transition)}
+    select:hover{border-color:var(--brand)}
+    select:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(30,58,95,0.1)}
 
-    /* Center all headings */
-    h1,h2,h3{text-align:center;margin:0 0 .4em}
+    /* Hero */
+    .hero{min-height:88vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:"";position:absolute;inset:0;background:url('img/main.jpg') center/cover no-repeat;z-index:-2;opacity:1}
+    .hero::after{content:"";position:absolute;inset:0;background:rgba(26,26,46,0.12);z-index:-1}
+    .hero .content{position:relative;color:#fff;max-width:780px;padding:60px 24px}
+    .hero .kicker{display:inline-block;font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;padding:8px 16px;background:rgba(201,169,98,0.15);border-radius:50px;border:1px solid rgba(201,169,98,0.3)}
+    .hero h1{color:#fff;font-size:clamp(2.5rem,6vw,4rem);margin-bottom:20px}
+    .hero .lead{font-size:1.15rem;color:rgba(255,255,255,0.92);max-width:640px;margin:0 auto 32px;line-height:1.8;font-weight:400}
+    .hero .lead strong{color:#fff;font-weight:500}
+    .hero-cta{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:50px;padding:14px 28px;font-size:0.95rem;font-weight:500;transition:all var(--transition);cursor:pointer}
+    .btn{background:#fff;color:var(--ink);border:1px solid rgba(255,255,255,0.3)}
+    .btn:hover{background:rgba(255,255,255,0.95);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+    .btn.primary{background:var(--accent);color:var(--ink);border-color:var(--accent)}
+    .btn.primary:hover{background:#d4b46e;transform:translateY(-2px);box-shadow:var(--shadow-md)}
 
-    /* HERO (full opacity image) */
-  .hero {
-  min-height: 86vh;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  position: relative;
-}
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url('img/main.jpg') center/cover no-repeat;
-  opacity: 1;
-  z-index: -2;
-}
-.hero .content {
-  padding: 5vh 10px 6vh;
-  background: rgba(255, 255, 255, 0.8); /* light background to improve visibility */
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-    .kicker{display:block;color:var(--accent);text-transform:uppercase;letter-spacing:.22em;font-weight:800;font-size:.8rem}
-    .lead{font-size:1.08rem;color:#334155;max-width:860px;margin:12px auto 0}
-    .hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:18px}
-    .btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:10px 16px;border:1px solid var(--line);background:#fff;color:var(--ink);box-shadow:var(--shadow)}
-    .btn.primary{background:linear-gradient(180deg,#2563eb,#1d4ed8);color:#fff;border:none}
-
-    section{padding:78px 0}
+    section{padding:100px 0}
     .muted{color:var(--muted)}
 
     /* About */
-    .about{background:#f8fafc;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
-    .about .photo{border-radius:16px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+    .about{background:var(--bg-solid);border-top:1px solid var(--line-light);border-bottom:1px solid var(--line-light)}
+    .about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about .text{text-align:center;max-width:720px;margin:0 auto}
+    .about .photo{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
+    .about .photo::after{content:'';position:absolute;inset:0;border:1px solid rgba(201,169,98,0.3);border-radius:var(--radius-lg);pointer-events:none}
+    .about .photo img{transition:transform 0.6s ease}
+    .about .photo:hover img{transform:scale(1.03)}
 
     /* Practice */
-    .grid{display:grid;gap:18px}
-    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
-    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);min-height:170px}
-    .card h3{font-size:1.15rem}
+    .practice{background:linear-gradient(180deg,var(--bg) 0%,var(--bg-solid) 100%);position:relative}
+    .practice::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-light),transparent)}
+    .practice h2{position:relative;display:inline-block}
+    .practice h2::after{content:'';display:block;width:60px;height:2px;background:var(--accent);margin:16px auto 0;border-radius:2px}
+    .practice .grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-top:52px}
+    .card{background:var(--bg-solid);border:1px solid var(--line-light);border-radius:var(--radius-lg);padding:28px 24px;transition:all var(--transition);position:relative;overflow:hidden;text-align:center;flex:0 0 400px;max-width:400px}
+    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));opacity:0;transition:opacity var(--transition)}
+    .card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,58,95,0.02) 0%,rgba(201,169,98,0.02) 100%);opacity:0;transition:opacity var(--transition)}
+    .card:hover{border-color:rgba(30,58,95,0.2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(26,26,46,0.1)}
+    .card:hover::before{opacity:1}
+    .card:hover::after{opacity:1}
+    .card-icon{display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:linear-gradient(135deg,rgba(30,58,95,0.06) 0%,rgba(201,169,98,0.06) 100%);border-radius:16px;margin:0 auto 24px;font-size:1.6rem;position:relative}
+    .card-icon::after{content:'';position:absolute;inset:0;border:1px solid rgba(201,169,98,0.2);border-radius:16px}
+    .card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.55rem;font-weight:600;margin-bottom:14px;color:var(--ink);position:relative}
+    .card .muted{font-size:1.05rem;line-height:1.75;color:var(--muted)}
 
-    /* Contact (combined) */
-    #contatti .block{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
-    .list{list-style:none;margin:0 auto;padding:0;display:grid;gap:14px;justify-items:center;max-width:760px}
-    .contact-row{display:flex;align-items:center;gap:10px}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#eff6ff;border:1px solid #bfdbfe;font-size:.85rem;color:#1e3a8a;white-space:nowrap}
+    /* Contact */
+    .contact{background:var(--bg-solid)}
+    .contact .block{background:var(--bg);border:1px solid var(--line-light);border-radius:var(--radius-lg);padding:48px;box-shadow:var(--shadow-md);position:relative}
+    .contact .block::before{content:'';position:absolute;top:0;left:48px;right:48px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent)}
+    .contact h2{text-align:center;margin-bottom:40px}
+    .list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:24px;justify-content:center}
+    .contact-row{display:flex;align-items:center;gap:16px;padding:16px 24px;background:var(--bg-solid);border-radius:var(--radius);border:1px solid var(--line-light);transition:all var(--transition)}
+    .contact-row:hover{border-color:var(--accent);box-shadow:var(--shadow-sm)}
+    .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;background:linear-gradient(135deg,var(--brand),var(--brand-light));color:#fff;font-size:0.8rem;font-weight:500;border-radius:50px;white-space:nowrap}
+    .contact-row a{color:var(--ink);font-weight:500}
+    .contact-row a:hover{color:var(--accent)}
+    .contact-info{text-align:center;margin-top:36px;max-width:600px;margin-left:auto;margin-right:auto}
+    .contact-info p{font-size:0.95rem;color:var(--muted);margin:8px 0}
 
-    footer{padding:30px 0;border-top:1px solid var(--line);color:#475569;background:#fff}
-    .top-link{position:fixed;right:18px;bottom:18px;z-index:40}
+    /* Footer */
+    footer{padding:32px 0;border-top:1px solid var(--line-light);background:var(--bg-solid)}
+    footer .footer-content{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+    footer small{color:var(--muted);font-size:0.85rem}
+    footer a{color:var(--muted);transition:color var(--transition)}
+    footer a:hover{color:var(--accent)}
+    .footer-brand{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:1.1rem;color:var(--ink)}
+    .top-link{position:fixed;right:24px;bottom:24px;z-index:40;width:52px;height:52px;display:grid;place-items:center;background:var(--brand);color:#fff;border:none;border-radius:12px;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(20px);transition:all var(--transition);box-shadow:var(--shadow-md);font-size:1.2rem}
+    .top-link.visible{opacity:1;visibility:visible;transform:translateY(0)}
+    .top-link:hover{transform:translateY(-6px) scale(1.05);box-shadow:var(--shadow-lg)}
     .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
-    @media (max-width:980px){
-      .about .wrap{grid-template-columns:1fr}
-      .grid.cols-3{grid-template-columns:1fr}
-      .nav .links{gap:14px}
-      .hero .content{padding:16vh 20px 10vh}
+    /* Animations */
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .hero .content>*{animation:fadeInUp 0.6s ease forwards}
+    .hero .kicker{animation-delay:0.1s}
+    .hero h1{animation-delay:0.2s}
+    .hero .lead{animation-delay:0.3s}
+    .hero-cta{animation-delay:0.4s}
+
+    @media (max-width:1024px){
+      .practice .grid{gap:20px}
+      .card{flex:0 0 350px;max-width:350px}
+      .nav{flex-wrap:wrap;gap:16px;padding:14px 0}
+      .nav .brand{order:1;flex:1 1 100%;text-align:center;margin-bottom:12px;justify-content:center;font-size:2.4rem}
+      .nav .links{order:2;flex-wrap:wrap;justify-content:center;gap:16px;width:100%}
+      .nav a{font-size:0.92rem}
+      .lang{width:100%;justify-content:center;margin-top:8px}
+    }
+    @media (max-width:768px){
+      .nav{flex-wrap:wrap;gap:12px;padding:12px 0}
+      .nav .brand{order:1;flex:1 1 100%;text-align:center;margin-bottom:8px;justify-content:center;font-size:2rem}
+      .nav .links{order:2;flex-wrap:wrap;justify-content:center;gap:8px;width:100%}
+      .nav a{padding:6px 10px;font-size:0.9rem}
+      .lang{width:100%;justify-content:center;margin-top:8px}
+      select{width:100%;max-width:200px}
+      .practice .grid{gap:16px}
+      .card{flex:0 0 100%;max-width:100%}
+      .about .wrap{grid-template-columns:1fr;gap:32px}
+      .contact .block{padding:32px 20px}
+      .list{flex-direction:column;align-items:center}
+      .footer-content{flex-direction:column;text-align:center}
+      .hero{min-height:80vh}
+    }
+    @media (max-width:480px){
+      .container{padding:0 16px}
+      section{padding:60px 0}
+      .hero .content{padding:40px 16px}
+      .btn{padding:12px 20px;font-size:0.9rem}
     }
   </style>
 </head>
@@ -96,9 +177,9 @@
   <a href="#contenuto" class="sr-only" data-i18n="a.skip">Salta al contenuto</a>
   <header>
     <div class="container nav" role="navigation" aria-label="Barra di navigazione">
-      <div class="brand">
+      <a href="#" class="brand">
         <span data-i18n="brand">Avv. Libero Pusceddu</span>
-      </div>
+      </a>
       <div class="links" aria-label="Link principali">
         <a href="#chi" data-i18n="nav.about">Chi sono</a>
         <a href="#attivita" data-i18n="nav.practice">Attività</a>
@@ -107,10 +188,10 @@
         <div class="lang" aria-label="Selettore lingua">
           <label for="lang" class="sr-only" data-i18n="lang.label">Lingua</label>
           <select id="lang" aria-label="Language selector">
-            <option value="it">Italiano</option>
-            <option value="en">English</option>
+            <option value="it">🇮🇹 Italiano</option>
+            <option value="en">🇬🇧 English</option>
             <!-- <option value="ru">Русский</option> -->
-            <option value="uk">Українська</option>
+            <option value="uk">🇺🇦 Українська</option>
           </select>
         </div>
       </div>
@@ -152,22 +233,27 @@
         <h2 data-i18n="practice.h2">Attività</h2>
         <div class="grid cols-3">
           <article class="card">
+            <div class="card-icon">⚖</div>
             <h3 data-i18n="practice.p1.title">Diritto Penale</h3>
             <p class="muted" style="text-align:center" data-i18n="practice.p1.text">Assistenza e difesa in procedimenti penali, dalle indagini preliminari al giudizio, con tutela dei diritti della persona e della responsabilità penale.</p>
           </article>
           <article class="card">
+            <div class="card-icon">📜</div>
             <h3 data-i18n="practice.p2.title">Diritto Civile</h3>
             <p class="muted" style="text-align:center" data-i18n="practice.p2.text">Consulenza e contenzioso in materia contrattuale, responsabilità civile, diritti reali, successioni e tutela del credito.</p>
           </article>
           <article class="card">
+            <div class="card-icon">🏛</div>
             <h3 data-i18n="practice.p3.title">Diritto Amministrativo</h3>
             <p class="muted" style="text-align:center" data-i18n="practice.p3.text">Ricorsi e assistenza nei confronti della Pubblica Amministrazione, appalti, edilizia, urbanistica e accesso agli atti.</p>
           </article>
           <article class="card">
+            <div class="card-icon">💰</div>
             <h3 data-i18n="practice.p4.title">Diritto Tributario</h3>
             <p class="muted" style="text-align:center" data-i18n="practice.p4.text">Consulenza e difesa in materia fiscale, accertamenti, contenzioso tributario e rapporti con l'Amministrazione finanziaria.</p>
           </article>
           <article class="card">
+            <div class="card-icon">🌍</div>
             <h3 data-i18n="practice.p5.title">Diritto Internazionale</h3>
             <p class="muted" style="text-align:center" data-i18n="practice.p5.text">Assistenza in controversie con profili transnazionali e rapporti tra ordinamenti, con particolare attenzione alla cooperazione giudiziaria.</p>
           </article>
@@ -193,12 +279,16 @@
   </main>
 
   <footer>
-    <div class="container" role="contentinfo" style="text-align:center">
-      <small data-i18n="footer.note">© <span id="y"></span> Libero Pusceddu – Tutti i diritti riservati.</small>
+    <div class="container" role="contentinfo">
+      <div class="footer-content">
+        <div class="footer-brand"><span data-i18n="brand">Avv. Libero Pusceddu</span></div>
+        <small data-i18n="footer.note">© <span class="year"></span> Libero Pusceddu – Tutti i diritti riservati.</small>
+        <small><a href="https://sanrokuku.com" target="_blank" rel="noopener">Web Design by San Roku Ku</a></small>
+      </div>
     </div>
   </footer>
 
-  <a class="btn top-link" href="#contenuto" aria-label="Torna su" data-i18n="footer.toTop">Top↑</a>
+  <a class="top-link" href="#contenuto" aria-label="Torna su" data-i18n="footer.toTop">↑</a>
 
   <script>
   (function(){
@@ -206,8 +296,9 @@
     window.__LP_INIT__ = true;
 
     // YEAR (idempotent)
-    var yearEl = document.getElementById('y');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
+    document.querySelectorAll('.year').forEach(el => {
+      el.textContent = new Date().getFullYear();
+    });
 
     // --- i18n dictionary ---
     const translations = {
@@ -234,7 +325,7 @@
         'contact.phone.label':'Telefono','contact.phone.value':'+39 328 116 6241','contact.email.label':'Email','contact.email.value':'libero.pusceddu@libero.it','contact.address.label':'Indirizzo','contact.address.value':'Via Guglielmo Marconi, 8 – 09126 Cagliari (CA)',
         'contact.info1':'Lo studio riceve su appuntamento. È possibile concordare incontri in presenza o da remoto.',
         'contact.info2':'Fori in cui ha esercitato: Ancona, Udine, Roma, Gela, Cagliari, Piacenza, Genova, Oristano, Sassari, Nuoro, Lanusei, Milano, Brescia, Mantova, Lodi, Pavia, Palermo.',
-        'footer.note':'© <span id="y"></span> Libero Pusceddu – Tutti i diritti riservati.',
+        'footer.note':'© <span class="year"></span> Libero Pusceddu – Tutti i diritti riservati.',
         'footer.toTop':'Top↑'
       },
       en: {
@@ -260,7 +351,7 @@
         'contact.phone.label':'Phone','contact.phone.value':'+39 328 116 6241','contact.email.label':'Email','contact.email.value':'libero.pusceddu@libero.it','contact.address.label':'Address','contact.address.value':'Via Guglielmo Marconi, 8 – 09126 Cagliari (CA)',
         'contact.info1':'Meetings by appointment only. In‑person or remote meetings available.',
         'contact.info2':'Courts where he has practiced: Ancona, Udine, Rome, Gela, Cagliari, Piacenza, Genoa, Oristano, Sassari, Nuoro, Lanusei, Milan, Brescia, Mantua, Lodi, Pavia, Palermo.',
-        'footer.note':'© <span id="y"></span> Libero Pusceddu – All rights reserved.',
+        'footer.note':'© <span class="year"></span> Libero Pusceddu – All rights reserved.',
         'footer.toTop':'Top↑'
       },
       ru: {
@@ -286,7 +377,7 @@
         'contact.phone.label':'Телефон','contact.phone.value':'+39 328 116 6241','contact.email.label':'Email','contact.email.value':'libero.pusceddu@libero.it','contact.address.label':'Адрес','contact.address.value':'Via Guglielmo Marconi, 8 – 09126 Cagliari (CA)',
         'contact.info1':'Приём по предварительной записи. Возможны очные и дистанционные встречи.',
         'contact.info2':'Суды, в которых адвокат практиковал: Анкона, Удине, Рим, Джела, Кальяри, Пьяченца, Генуя, Ористано, Сассари, Нуоро, Лануэзеи, Милан, Брешия, Мантуя, Лоди, Павия, Палермо.',
-        'footer.note':'© <span id="y"></span> Libero Pusceddu — Все права защищены.',
+        'footer.note':'© <span class="year"></span> Libero Pusceddu — Все права защищены.',
         'footer.toTop':'Наверх↑'
       },
       uk: {
@@ -312,7 +403,7 @@
         'contact.phone.label':'Телефон','contact.phone.value':'+39 328 116 6241','contact.email.label':'Email','contact.email.value':'libero.pusceddu@libero.it','contact.address.label':'Адреса','contact.address.value':'Via Guglielmo Marconi, 8 – 09126 Cagliari (CA)',
         'contact.info1':'Прийом лише за попереднім записом. Доступні очні та дистанційні зустрічі.',
         'contact.info2':'Суди, де адвокат практикував: Анкона, Удіне, Рим, Джела, Кальярі, Пʼяченца, Генуя, Орістано, Сассарі, Нуоро, Ланузеї, Мілан, Брешія, Мантуя, Лоді, Павія, Палермо.',
-        'footer.note':'© <span id="y"></span> Libero Pusceddu — Усі права захищені.',
+        'footer.note':'© <span class="year"></span> Libero Pusceddu — Усі права захищені.',
         'footer.toTop':'Угору↑'
       }
     };
@@ -359,6 +450,18 @@
         if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
       })
     })
+
+    // Header shadow on scroll
+    const header = document.querySelector('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Back to top button visibility
+    const topLink = document.querySelector('.top-link');
+    window.addEventListener('scroll', () => {
+      topLink.classList.toggle('visible', window.scrollY > 400);
+    });
 
     // --- Basic Test Cases ---
     (function runTests(){
