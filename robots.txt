@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://liberopusceddu.com/sitemap.xml
+
+Host: https://liberopusceddu.com

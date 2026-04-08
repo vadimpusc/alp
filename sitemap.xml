@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://liberopusceddu.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://liberopusceddu.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liberopusceddu.com/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://liberopusceddu.com/"/>
+    <image:image>
+      <image:loc>https://liberopusceddu.com/img/main.jpg</image:loc>
+      <image:title>Avv. Libero Pusceddu - Studio Legale Cagliari</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://liberopusceddu.com/#chi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://liberopusceddu.com/#chi"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liberopusceddu.com/#chi"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://liberopusceddu.com/#chi"/>
+  </url>
+  <url>
+    <loc>https://liberopusceddu.com/#attivita</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://liberopusceddu.com/#attivita"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liberopusceddu.com/#attivita"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://liberopusceddu.com/#attivita"/>
+  </url>
+  <url>
+    <loc>https://liberopusceddu.com/#contatti</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://liberopusceddu.com/#contatti"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://liberopusceddu.com/#contatti"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://liberopusceddu.com/#contatti"/>
+  </url>
+</urlset>

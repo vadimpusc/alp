@@ -7,7 +7,33 @@
   <meta name="description" content="Avv. Libero Pusceddu, avvocato a Cagliari. Diritto Penale, Civile, Amministrativo, Tributario e Internazionale. Studio in Cagliari. Tel. +39 328 116 6241." data-i18n-attr="content:meta.description" />
   <meta property="og:title" content="Avv. Libero Pusceddu – Avvocato a Cagliari" data-i18n-attr="content:meta.title" />
   <meta property="og:description" content="Consulenza e assistenza legale in più aree del diritto. Contatti: +39 328 116 6241 – libero.pusceddu@libero.it" data-i18n-attr="content:meta.ogdesc" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="uk_UA" />
+  <meta property="og:image" content="img/main.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Avv. Libero Pusceddu - Studio Legale Cagliari" />
+  <meta property="og:url" content="https://liberopusceddu.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="Avv. Libero Pusceddu - Studio Legale Cagliari" />
+  <meta name="twitter:title" content="Avv. Libero Pusceddu – Avvocato a Cagliari" data-i18n-attr="content:meta.title" />
+  <meta name="twitter:description" content="Avv. Libero Pusceddu, avvocato a Cagliari. Diritto Penale, Civile, Amministrativo, Tributario e Internazionale." data-i18n-attr="content:meta.description" />
+  <meta name="twitter:image" content="img/main.jpg" />
   <meta name="theme-color" content="#1a1a2e" />
+  <link rel="canonical" href="https://liberopusceddu.com" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+  <link rel="alternate" hreflang="it" href="https://liberopusceddu.com" />
+  <link rel="alternate" hreflang="en" href="https://liberopusceddu.com" />
+  <link rel="alternate" hreflang="uk" href="https://liberopusceddu.com" />
+  <link rel="alternate" hreflang="x-default" href="https://liberopusceddu.com" />
+  <meta name="author" content="Avv. Libero Pusceddu" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -95,17 +121,19 @@
     .practice::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--line-light),transparent)}
     .practice h2{position:relative;display:inline-block}
     .practice h2::after{content:'';display:block;width:60px;height:2px;background:var(--accent);margin:16px auto 0;border-radius:2px}
-    .practice .grid{display:flex;flex-wrap:wrap;justify-content:center;gap:24px;margin-top:52px}
-    .card{background:var(--bg-solid);border:1px solid var(--line-light);border-radius:var(--radius-lg);padding:28px 24px;transition:all var(--transition);position:relative;overflow:hidden;text-align:center;flex:0 0 400px;max-width:400px}
-    .card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));opacity:0;transition:opacity var(--transition)}
-    .card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,58,95,0.02) 0%,rgba(201,169,98,0.02) 100%);opacity:0;transition:opacity var(--transition)}
-    .card:hover{border-color:rgba(30,58,95,0.2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(26,26,46,0.1)}
-    .card:hover::before{opacity:1}
-    .card:hover::after{opacity:1}
-    .card-icon{display:flex;align-items:center;justify-content:center;width:56px;height:56px;background:linear-gradient(135deg,rgba(30,58,95,0.06) 0%,rgba(201,169,98,0.06) 100%);border-radius:16px;margin:0 auto 24px;font-size:1.6rem;position:relative}
-    .card-icon::after{content:'';position:absolute;inset:0;border:1px solid rgba(201,169,98,0.2);border-radius:16px}
-    .card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.55rem;font-weight:600;margin-bottom:14px;color:var(--ink);position:relative}
-    .card .muted{font-size:1.05rem;line-height:1.75;color:var(--muted)}
+    .practice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px;max-width:1200px;margin-left:auto;margin-right:auto}
+.card{background:var(--bg-solid);border:1px solid var(--line-light);border-radius:var(--radius-lg);padding:32px 28px;transition:all var(--transition);position:relative;overflow:hidden;text-align:center;box-shadow:0 2px 8px rgba(26,26,46,0.04);width:100%}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));opacity:0;transition:opacity var(--transition)}
+.card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,58,95,0.02) 0%,rgba(201,169,98,0.02) 100%);opacity:0;transition:opacity var(--transition)}
+.card:hover{border-color:rgba(30,58,95,0.2);transform:translateY(-6px);box-shadow:0 20px 40px rgba(26,26,46,0.1)}
+.card:hover::before{opacity:1}
+.card:hover::after{opacity:1}
+.card-icon{display:flex;align-items:center;justify-content:center;width:64px;height:64px;background:linear-gradient(135deg,rgba(30,58,95,0.08) 0%,rgba(201,169,98,0.08) 100%);border-radius:50%;margin:0 auto 24px;font-size:1.75rem;position:relative;box-shadow:0 0 0 1px rgba(201,169,98,0.15),0 4px 12px rgba(30,58,95,0.08)}
+.card-icon::after{content:'';position:absolute;inset:0;border-radius:50%;background:linear-gradient(135deg,rgba(201,169,98,0.2) 0%,rgba(201,169,98,0.05) 100%);opacity:0;transition:opacity var(--transition)}
+.card:hover .card-icon::after{opacity:1}
+.card h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.55rem;font-weight:600;margin-bottom:14px;color:var(--ink);position:relative;transition:color var(--transition)}
+.card:hover h3{color:var(--brand)}
+.card .muted{font-size:1.05rem;line-height:1.75;color:var(--muted)}
 
     /* Contact */
     .contact{background:var(--bg-solid)}
@@ -142,8 +170,8 @@
     .hero-cta{animation-delay:0.4s}
 
     @media (max-width:1024px){
-      .practice .grid{gap:20px}
-      .card{flex:0 0 350px;max-width:350px}
+      .practice-grid{grid-template-columns:repeat(2,1fr);gap:20px;max-width:800px}
+      .card{flex:0 0 100%;max-width:100%}
       .nav{flex-wrap:wrap;gap:16px;padding:14px 0}
       .nav .brand{order:1;flex:1 1 100%;text-align:center;margin-bottom:12px;justify-content:center;font-size:2.4rem}
       .nav .links{order:2;flex-wrap:wrap;justify-content:center;gap:16px;width:100%}
@@ -157,7 +185,7 @@
       .nav a{padding:6px 10px;font-size:0.9rem}
       .lang{width:100%;justify-content:center;margin-top:8px}
       select{width:100%;max-width:200px}
-      .practice .grid{gap:16px}
+      .practice-grid{grid-template-columns:1fr;gap:16px;max-width:400px}
       .card{flex:0 0 100%;max-width:100%}
       .about .wrap{grid-template-columns:1fr;gap:32px}
       .contact .block{padding:32px 20px}
@@ -231,7 +259,7 @@
     <section id="attivita">
       <div class="container">
         <h2 data-i18n="practice.h2">Attività</h2>
-        <div class="grid cols-3">
+        <div class="practice-grid">
           <article class="card">
             <div class="card-icon">⚖</div>
             <h3 data-i18n="practice.p1.title">Diritto Penale</h3>
@@ -288,7 +316,7 @@
     </div>
   </footer>
 
-  <a class="top-link" href="#contenuto" aria-label="Torna su" data-i18n="footer.toTop">↑</a>
+  <a class="top-link" href="#" aria-label="Torna su" data-i18n="footer.toTop">↑</a>
 
   <script>
   (function(){
@@ -423,6 +451,13 @@
         });
       });
       if(dict['meta.title']) document.title = dict['meta.title'];
+      document.querySelector('meta[name="description"]').setAttribute('content', dict['meta.description']);
+      document.querySelector('meta[property="og:title"]').setAttribute('content', dict['meta.title']);
+      document.querySelector('meta[property="og:description"]').setAttribute('content', dict['meta.ogdesc']);
+      document.querySelector('meta[name="twitter:title"]').setAttribute('content', dict['meta.title']);
+      document.querySelector('meta[name="twitter:description"]').setAttribute('content', dict['meta.description']);
+      const langLocales = { it: 'it_IT', en: 'en_US', uk: 'uk_UA' };
+      document.querySelector('meta[property="og:locale"]').setAttribute('content', langLocales[lang] || 'it_IT');
       try{ localStorage.setItem('lang', lang); }catch(e){}
     }
 
@@ -462,6 +497,10 @@
     window.addEventListener('scroll', () => {
       topLink.classList.toggle('visible', window.scrollY > 400);
     });
+    topLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
     // --- Basic Test Cases ---
     (function runTests(){
@@ -485,11 +524,45 @@
     "description": "Avvocato a Cagliari. Diritto Penale, Civile, Amministrativo, Tributario e Internazionale.",
     "address": { "@type": "PostalAddress", "streetAddress": "Via Guglielmo Marconi, 8", "addressLocality": "Cagliari", "postalCode": "09126", "addressRegion": "CA", "addressCountry": "IT" },
     "telephone": "+39 328 116 6241",
-    "email": "mailto:libero.pusceddu@libero.it",
-    "areaServed": "Italia",
+    "email": "libero.pusceddu@libero.it",
+    "areaServed": "IT",
+    "priceRange": "€€",
     "image": "img/main.jpg",
     "url": "https://liberopusceddu.com",
-    "sameAs": []
+    "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }],
+    "makesOffer": [
+      { "@type": "Offer", "category": "LegalService", "name": "Diritto Penale", "description": "Assistenza e difesa in procedimenti penali" },
+      { "@type": "Offer", "category": "LegalService", "name": "Diritto Civile", "description": "Consulenza e contenzioso civile" },
+      { "@type": "Offer", "category": "LegalService", "name": "Diritto Amministrativo", "description": "Ricorsi e assistenza amministrativa" },
+      { "@type": "Offer", "category": "LegalService", "name": "Diritto Tributario", "description": "Consulenza e difesa fiscale" },
+      { "@type": "Offer", "category": "LegalService", "name": "Diritto Internazionale", "description": "Assistenza in controversie transnazionali" }
+    ],
+    "serviceType": ["Criminal Law", "Civil Law", "Administrative Law", "Tax Law", "International Law"],
+    "publishers": [{ "@type": "Organization", "name": "Avv. Libero Pusceddu" }]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Avv. Libero Pusceddu - Studio Legale Cagliari",
+    "description": "Studio legale a Cagliari specializzato in Diritto Penale, Civile, Amministrativo, Tributario e Internazionale.",
+    "url": "https://liberopusceddu.com",
+    "logo": "img/main.jpg",
+    "image": "img/main.jpg",
+    "telephone": "+39 328 116 6241",
+    "email": "libero.pusceddu@libero.it",
+    "address": { "@type": "PostalAddress", "streetAddress": "Via Guglielmo Marconi, 8", "addressLocality": "Cagliari", "postalCode": "09126", "addressRegion": "CA", "addressCountry": "IT" },
+    "geo": { "@type": "GeoCoordinates", "latitude": "39.2301", "longitude": "9.1090" },
+    "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }],
+    "priceRange": "€€"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home" }]
   }
   </script>
 </body>
