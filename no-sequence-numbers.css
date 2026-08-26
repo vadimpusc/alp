@@ -1,0 +1,4 @@
+.number,.services article>i{display:none!important}
+.services article{grid-template-columns:.8fr 1.2fr 25px}
+@media(max-width:850px){.services article{grid-template-columns:.8fr 1.2fr 20px}}
+@media(max-width:580px){.services article{grid-template-columns:1fr 20px}.services article p{grid-column:1/3}}

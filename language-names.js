@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const s=document.querySelector('#lang');if(!s)return;const names={it:'Italiano',en:'English',uk:'Українська'};Array.from(s.options).forEach(o=>o.textContent=names[o.value]);s.setAttribute('aria-label','Seleziona lingua')});

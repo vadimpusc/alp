@@ -1,0 +1,36 @@
+@media(min-width:581px) and (max-width:900px){
+  .shell{width:min(100% - 56px,820px)}
+  .nav{position:relative;display:grid;grid-template-columns:140px 1fr 140px;gap:12px;height:88px}
+  .nav>.menu{display:grid;place-items:center;grid-column:1;grid-row:1;width:44px;height:44px;padding:0;justify-self:start;font-size:0;cursor:pointer}
+  .nav>.menu:before,.nav>.menu:after{content:"";position:absolute;width:23px;height:1px;background:#fff;transition:transform .25s}
+  .nav>.menu:before{transform:translateY(-4px)}.nav>.menu:after{transform:translateY(4px)}
+  .nav>.menu[aria-expanded="true"]:before{transform:rotate(45deg)}.nav>.menu[aria-expanded="true"]:after{transform:rotate(-45deg)}
+  .nav>.brand{grid-column:2;grid-row:1;justify-self:center;text-align:center}
+  .nav>.brand span{font-size:1.18rem}.nav>.brand small{margin-top:6px}
+  .nav>.navlinks{grid-column:3;grid-row:1;justify-self:end}
+  .nav>.navlinks:not(.open){display:flex;width:140px}
+  .nav>.navlinks:not(.open)>.lang-control{width:140px;margin:0}
+  .nav>.navlinks:not(.open) .lang-trigger{justify-content:center;height:42px;padding:0 27px 0 12px;background:rgba(9,30,24,.16)}
+  .nav>.navlinks:not(.open) .lang-trigger i{position:absolute;right:13px}
+  .nav>.navlinks.open{z-index:-1;position:fixed;inset:0;width:100vw;max-width:none;min-height:100svh;padding:145px 40px 55px;align-items:center;text-align:center;background:rgba(12,36,30,.985);overflow-y:auto}
+  .nav>.navlinks.open>a{width:100%;font-size:3rem}
+  .nav>.navlinks.open>.lang-control{width:210px;margin-top:28px}
+  body:has(.navlinks.open){overflow:hidden}
+  .hero{min-height:820px;height:100svh;max-height:940px}
+  .hero-photo{inset:0 0 0 30%;background-position:53% 25%}
+  .hero:after{background:linear-gradient(90deg,#102c25 0%,rgba(16,44,37,.94) 31%,rgba(16,44,37,.48) 68%,rgba(16,44,37,.08) 100%)}
+  .hero-grid{display:block;padding-bottom:9vh}
+  .hero-copy{width:min(92%,650px)}
+  .hero h1{font-size:clamp(4rem,8.4vw,5.25rem);max-width:650px}
+  .hero .lead{max-width:590px}
+  section{padding:105px 0}
+  .split,.faq-grid{gap:22px}
+  .statement{margin-bottom:42px}
+  .section-head{gap:20px;margin-bottom:48px}
+  .services article{padding:28px 0}
+  .profile .portrait{min-height:680px;background-position:50% 18%}
+  .profile-copy{padding:85px 9vw}
+  .contact-grid{gap:45px}
+  footer{padding-top:52px}
+  footer .footer-top{align-items:center}
+}

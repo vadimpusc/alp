@@ -1,0 +1,5 @@
+.brand>b{display:none!important}
+.brand{gap:0}
+.brand small{font-family:var(--sans);font-size:0!important;font-weight:700!important;letter-spacing:.14em!important;opacity:.88!important}
+.brand small:after{content:"Studio legale Cagliari";font-size:.54rem}
+@media(max-width:580px){.brand small:after{font-size:.5rem}}

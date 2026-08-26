@@ -1,0 +1,29 @@
+@media(max-width:580px){
+  header{border-bottom-color:rgba(255,255,255,.25)}
+  .nav{position:relative;display:grid;grid-template-columns:48px minmax(0,1fr) 106px;gap:8px;height:78px}
+  .nav>.menu{display:grid;place-items:center;grid-column:1;grid-row:1;width:42px;height:42px;padding:0;font-size:0;justify-self:start;cursor:pointer}
+  .nav>.menu:before,.nav>.menu:after{content:"";position:absolute;width:22px;height:1px;background:white;transition:transform .25s,top .25s}
+  .nav>.menu:before{transform:translateY(-4px)}.nav>.menu:after{transform:translateY(4px)}
+  .nav>.menu[aria-expanded="true"]:before{transform:rotate(45deg)}.nav>.menu[aria-expanded="true"]:after{transform:rotate(-45deg)}
+  .nav>.brand{grid-column:2;grid-row:1;justify-self:center;text-align:center;min-width:0}
+  .nav>.brand span{display:block;white-space:nowrap;font-size:1.05rem}
+  .nav>.brand small{margin-top:6px}
+  .nav>.navlinks{grid-column:3;grid-row:1;justify-self:end;width:106px;gap:0}
+  .nav>.navlinks:not(.open)>.lang-control{width:106px}
+  .nav>.navlinks:not(.open) .lang-trigger{justify-content:center;padding:0 22px 0 8px;border:0;border-left:1px solid rgba(255,255,255,.27);background:transparent}
+  .nav>.navlinks:not(.open) .lang-trigger i{position:absolute;right:8px}
+  .nav>.navlinks.open{z-index:-1;position:fixed;inset:0;width:100vw;max-width:none;min-height:100svh;padding:120px 24px 45px;align-items:center;text-align:center;background:rgba(12,36,30,.985);overflow-y:auto}
+  .nav>.navlinks.open>a{width:100%;font-size:2.5rem}
+  .nav>.navlinks.open>.lang-control{width:190px;margin-top:25px}
+  footer{padding:70px 0 32px}
+  footer .footer-top{display:flex;align-items:center;text-align:center;gap:34px;padding-bottom:43px}
+  footer .footer-top>.brand{justify-content:center;text-align:center}
+  footer .footer-top>.brand span{font-size:1.45rem}
+  footer .footer-top>.brand small{margin-top:8px}
+  footer .footer-top>div{text-align:center;width:100%}
+  footer .footer-top>div:before{content:"";display:block;width:38px;height:1px;margin:0 auto 25px;background:#b89b62}
+  footer .footer-top>div a{font-size:1.18rem;line-height:1.6;overflow-wrap:anywhere}
+  footer .footer-bottom{align-items:center;text-align:center;gap:18px;padding-top:28px;line-height:1.7}
+  footer .footer-bottom>a{padding-top:2px;color:rgba(255,255,255,.55)}
+  body:has(.navlinks.open){overflow:hidden}
+}
